@@ -1,0 +1,1 @@
+Dowodziliśmy niepoprawnoości / poprawności algorytmów współbieżnych
