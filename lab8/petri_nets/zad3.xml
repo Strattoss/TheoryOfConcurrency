@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><pnml>
+    <net id="Net-One" type="P/T net">
+        <token id="Default" enabled="true" red="0" green="0" blue="0"/>
+        <place id="Oczekuj&#261;cy">
+            <graphics>
+                <position x="195.0" y="255.0"/>
+            </graphics>
+            <name>
+                <value>Oczekuj&#261;cy</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Oczekuj&#261;cy2">
+            <graphics>
+                <position x="435.0" y="255.0"/>
+            </graphics>
+            <name>
+                <value>Oczekuj&#261;cy2</value>
+                <graphics>
+                    <offset x="91.0" y="-2.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="P3">
+            <graphics>
+                <position x="195.0" y="375.0"/>
+            </graphics>
+            <name>
+                <value>P3</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="P5">
+            <graphics>
+                <position x="135.0" y="90.0"/>
+            </graphics>
+            <name>
+                <value>P5</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="P7">
+            <graphics>
+                <position x="420.0" y="375.0"/>
+            </graphics>
+            <name>
+                <value>P7</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="P8">
+            <graphics>
+                <position x="495.0" y="90.0"/>
+            </graphics>
+            <name>
+                <value>P8</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Wolny">
+            <graphics>
+                <position x="315.0" y="90.0"/>
+            </graphics>
+            <name>
+                <value>Wolny</value>
+                <graphics>
+                    <offset x="37.0" y="-11.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Zaj&#281;ty">
+            <graphics>
+                <position x="315.0" y="255.0"/>
+            </graphics>
+            <name>
+                <value>Zaj&#281;ty</value>
+                <graphics>
+                    <offset x="32.0" y="40.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <transition id="Praca">
+            <graphics>
+                <position x="45.0" y="240.0"/>
+            </graphics>
+            <name>
+                <value>Praca</value>
+                <graphics>
+                    <offset x="-2.0" y="22.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Praca2">
+            <graphics>
+                <position x="585.0" y="255.0"/>
+            </graphics>
+            <name>
+                <value>Praca2</value>
+                <graphics>
+                    <offset x="62.0" y="15.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Zajmij">
+            <graphics>
+                <position x="255.0" y="255.0"/>
+            </graphics>
+            <name>
+                <value>Zajmij</value>
+                <graphics>
+                    <offset x="28.0" y="47.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Zajmij2">
+            <graphics>
+                <position x="375.0" y="255.0"/>
+            </graphics>
+            <name>
+                <value>Zajmij2</value>
+                <graphics>
+                    <offset x="45.0" y="41.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Zwolnij">
+            <graphics>
+                <position x="195.0" y="90.0"/>
+            </graphics>
+            <name>
+                <value>Zwolnij</value>
+                <graphics>
+                    <offset x="33.0" y="-12.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Zwolnij2">
+            <graphics>
+                <position x="435.0" y="90.0"/>
+            </graphics>
+            <name>
+                <value>Zwolnij2</value>
+                <graphics>
+                    <offset x="31.0" y="-12.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <arc id="Oczekuj&#261;cy2 to Zajmij2" source="Oczekuj&#261;cy2" target="Zajmij2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="432" y="267" curvePoint="false"/>
+            <arcpath id="001" x="391" y="267" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Oczekuj&#261;cy to Zajmij" source="Oczekuj&#261;cy" target="Zajmij">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="221" y="267" curvePoint="false"/>
+            <arcpath id="001" x="261" y="267" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="P3 to Praca" source="P3" target="Praca">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="192" y="387" curvePoint="false"/>
+            <arcpath id="001" x="56" y="390" curvePoint="false"/>
+            <arcpath id="002" x="57" y="267" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="P5 to Zwolnij" source="P5" target="Zwolnij">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="161" y="102" curvePoint="false"/>
+            <arcpath id="001" x="201" y="102" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="P7 to Praca2" source="P7" target="Praca2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="446" y="387" curvePoint="false"/>
+            <arcpath id="001" x="595" y="391" curvePoint="false"/>
+            <arcpath id="002" x="597" y="282" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="P8 to Zwolnij2" source="P8" target="Zwolnij2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="492" y="102" curvePoint="false"/>
+            <arcpath id="001" x="451" y="102" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Praca2 to P8" source="Praca2" target="P8">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="597" y="252" curvePoint="false"/>
+            <arcpath id="001" x="594" y="107" curvePoint="false"/>
+            <arcpath id="002" x="521" y="102" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Praca to P5" source="Praca" target="P5">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="57" y="237" curvePoint="false"/>
+            <arcpath id="001" x="54" y="106" curvePoint="false"/>
+            <arcpath id="002" x="132" y="102" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Wolny to Zajmij" source="Wolny" target="Zajmij">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="321" y="115" curvePoint="false"/>
+            <arcpath id="001" x="267" y="252" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Wolny to Zajmij2" source="Wolny" target="Zajmij2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="332" y="115" curvePoint="false"/>
+            <arcpath id="001" x="387" y="252" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Zaj&#281;ty to Zwolnij" source="Zaj&#281;ty" target="Zwolnij">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="318" y="254" curvePoint="false"/>
+            <arcpath id="001" x="211" y="107" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Zaj&#281;ty to Zwolnij2" source="Zaj&#281;ty" target="Zwolnij2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="335" y="254" curvePoint="false"/>
+            <arcpath id="001" x="441" y="107" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Zajmij2 to P7" source="Zajmij2" target="P7">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="387" y="282" curvePoint="false"/>
+            <arcpath id="001" x="426" y="373" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Zajmij2 to Zaj&#281;ty" source="Zajmij2" target="Zaj&#281;ty">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="381" y="267" curvePoint="false"/>
+            <arcpath id="001" x="341" y="267" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Zajmij to P3" source="Zajmij" target="P3">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="267" y="282" curvePoint="false"/>
+            <arcpath id="001" x="214" y="373" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Zajmij to Zaj&#281;ty" source="Zajmij" target="Zaj&#281;ty">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="271" y="267" curvePoint="false"/>
+            <arcpath id="001" x="312" y="267" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Zwolnij2 to Oczekuj&#261;cy2" source="Zwolnij2" target="Oczekuj&#261;cy2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="447" y="117" curvePoint="false"/>
+            <arcpath id="001" x="447" y="252" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Zwolnij2 to Wolny" source="Zwolnij2" target="Wolny">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="442" y="97" curvePoint="false"/>
+            <arcpath id="001" x="341" y="101" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Zwolnij to Oczekuj&#261;cy" source="Zwolnij" target="Oczekuj&#261;cy">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="207" y="117" curvePoint="false"/>
+            <arcpath id="001" x="207" y="252" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Zwolnij to Wolny" source="Zwolnij" target="Wolny">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="212" y="97" curvePoint="false"/>
+            <arcpath id="001" x="312" y="101" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+    </net>
+</pnml>
